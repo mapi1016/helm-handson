@@ -1,0 +1,6 @@
+apiVersion: v2 # 필수, 헬름에 대한 API 버전
+name: hello-chart # 필수, 차트 이름
+description: Helm 입문 실습용 Nginx Chart
+type: application
+version: 0.0.1 # 필수
+appVersion: "1.0.0"

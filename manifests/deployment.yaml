@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: manual-hello
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: manual-hello
+  template:
+    metadata:
+      labels:
+        app: manual-hello
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:stable-alpine
+          ports:
+            - containerPort: 80
